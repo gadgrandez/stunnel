@@ -1,10 +1,9 @@
 #!/bin/sh
 
-if ! [ -f stunnel.conf ] 
-then
-
 cd /etc/stunnel
 
+if ! [ -f stunnel.conf ] 
+then
 cat > stunnel.conf <<_EOF_
 foreground = yes
 setuid = stunnel
